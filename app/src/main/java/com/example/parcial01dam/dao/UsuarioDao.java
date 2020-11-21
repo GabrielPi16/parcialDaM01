@@ -1,20 +1,26 @@
 package com.example.parcial01dam.dao;
 
+import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Delete;
+import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Update;
+
+import com.example.parcial01dam.model.Usuario;
+
+import java.util.List;
+
 @Dao
 public interface UsuarioDao {
-    @Query("SELECT * FROM user")
-    List<User> getAll();
-
-    @Query("SELECT * FROM user WHERE uid IN (:userIds)")
-    List<User> loadAllByIds(int[] userIds);
-
-    @Query("SELECT * FROM user WHERE first_name LIKE :first AND " +
-            "last_name LIKE :last LIMIT 1")
-    User findByName(String first, String last);
-
     @Insert
-    void insertAll(User... users);
+    void insert(Usuario usuario);
 
     @Delete
-    void delete(User user);
+    void delete(Usuario usuario);
+
+    @Update
+    void uptate(Usuario usuario);
+
+    @Query("SELECT * FROM users WHERE id = :id LIMIT 1")
+    Usuario search(String id);
 }

@@ -1,4 +1,9 @@
 package com.example.parcial01dam.dao;
 
-public class OnUsuarioResultCallback {
+import com.example.parcial01dam.model.Usuario;
+
+import java.util.List;
+
+interface OnUsuarioResultCallback {
+    void onResult(List<Usuario> usuarioList);
 }

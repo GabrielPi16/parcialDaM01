@@ -1,11 +1,14 @@
 package com.example.parcial01dam.model;
 
+import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+
+import androidx.room.PrimaryKey;
 
 @Entity
 public class Usuario {
 
-    @PrimaryKey (autoGenerate  =  true)
+    @PrimaryKey(autoGenerate  =  true)
     public int uid;
 
     @ColumnInfo(name = "first_name")
