@@ -83,7 +83,7 @@ public class Usuario {
         this.radioOpcionB = radioOpcionB;
     }
 
-    public Boolean getSwitNotifi() {
+    public Boolean getSwitNotifi(boolean checked) {
         return switNotifi;
     }
 
