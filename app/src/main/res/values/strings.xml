@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Parcial01DAM</string>
+
+    <string name="name">Nombre</string>
+    <string name="subname">Apellido</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="notific">¿Desea recibir notificaciones?</string>
+    <string name="terms">Acepto los terminos y condiciones</string>
+    <string name="ntarget">Nro. Tarjeta</string>
+    <string name="ntypetargetA">Credito</string>
+    <string name="ntypetargetB">Debito</string>
+
+
+    <string name="aceptar">Guardar</string>
+
 </resources>
